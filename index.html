@@ -1,0 +1,107 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div   class="container">
+           <!-- NavBar -->
+          <nav class="navbar">
+            <!-- logo -->
+              <img src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg" alt="logo"/>
+               <!-- Search Button -->
+              <p class="search-bar">
+                <logo class="icon"> <img class="icon-img" src="https://crushingit.tech/hackathon-assets/icon-search.svg" alt=""/> </logo>
+                <text class="icon-text"> Search </text>
+               </p>
+               <!-- Frame -->
+              <div class="frame-5">
+                 <!-- Notificantion -->
+                    <a onclick=showNotificantionMenu() href="#" class="tag"><img class="tag-color" src="https://crushingit.tech/hackathon-assets/icon-bell.svg" alt="" /></a>
+                    <!-- Logo text -->
+                    <a href="#" onclick=showLogoMenu() class="logo-text">
+                        <text  class="span-text"> 
+                            Daii Collections 
+                        </text> 
+                        <text class="dc">
+                            <text class="dc-text">
+                                DC
+                            </text>
+                        </text>
+                    </a>
+                </div>
+            </nav>
+            <!-- Notificantion menu -->
+            <div class="notificantion-menu">
+              <div class="notificantion-text-menu">
+                <h5 class="notificantion-text">
+                    Alerts
+                    <div class="notificantion-icon">
+                        <img src="https://crushingit.tech/hackathon-assets/icon-filter.svg" alt="">
+                        <img src="https://crushingit.tech/hackathon-assets/icon-check-empty-circle.svg" alt="">
+                    </div>
+                </h5>
+                <p>Alerts about your store and account will show here</p>
+              </div>
+            </div>
+        <!-- Logo text menu -->
+        <div class="logo-menu">
+                  <span class="logo-dc-menu" > 
+                     <div class="frame-8"> <text class= "logo-dc"> DC </text> <text class="logo-dc-text"> Davii Collections </text> </div>
+                      <img src="https://crushingit.tech/hackathon-assets/icon-check-empty-circle.svg" alt="">
+                  </span>
+                  <span ><img src="https://crushingit.tech/hackathon-assets/icon-store.svg" alt=""/> All stores</span>
+                  <div class="hr">
+                      <span >Help Center</span>
+                      <span >Changelog</span>
+                      <span >Community forums</span>
+                      <span >Hire a Shopify Partner</span>
+                      <span >Keyboard shortcuts</span>
+                  </div>
+                  
+               <div>
+                   <p >David Micheal  
+                   davidmicheal@gmail.com</p>
+               </div>
+                <span >Manage account</span>
+                <span >Log out</span>
+        </div>
+
+        <!-- Select a plan section -->
+        <section class="section">
+            <div class="select-plan">
+                <p class="plan-text">
+                   Extend your trial for $1/month for 3 months on select plans.
+                </p>
+                <div class="plan-frame">
+                    <button class="plan-button">
+                       select a plan
+                    </button>
+                 <a onclick= hideSelectPlan()>
+                     <img class="plan-img" src="https://crushingit.tech/hackathon-assets/icon-cross.svg" alt="">
+                </a>    
+                </div>
+            </div>
+        </section>
+            <!-- setup guide -->
+            <section class="second-section">
+                <div class="setup-menu">
+                    <div class="setup-guide">
+                      <h5 class="setup-text">Setup guide</h5>
+                      <p class="setup-p">Use this personalized guide to get your store up and running.</p>
+                      <span class="setup-span">1 / 5 completed <hr class="setup-line"></span>
+                    </div>
+                    <img class="setup-img" src="https://crushingit.tech/hackathon-assets/icon-arrow-down.svg" alt="">
+                </div>
+            </section>
+    </div>
+
+  <script src="./app.js"></script>
+  </body>
+</html>
