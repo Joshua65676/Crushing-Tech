@@ -25,6 +25,21 @@ function hideSelectPlan() {
     selectPlan.style.display = 'none';
 }
 
+function showSecondSection() {
+  const secondSection = document.querySelector('.second-section');
+  const secondSection2 = document.querySelector('.second-section2');
+  secondSection.style.display = 'flex';
+  secondSection2.style.display = 'none';
+}
+
+function hideSecondSection2() {
+  const secondSection = document.querySelector('.second-section');
+  const secondSection2 = document.querySelector('.second-section2');
+  secondSection2.style.display = 'flex';
+  secondSection.style.display = 'none';
+}
+
+
 // const logoMenu = document.querySelector('.logo-menu');
 
 // document.addEventListener('click', function(event) {

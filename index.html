@@ -12,7 +12,7 @@
   <body>
     <div   class="container">
            <!-- NavBar -->
-          <nav class="navbar">
+            <nav class="navbar">
             <!-- logo -->
               <img src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg" alt="logo"/>
                <!-- Search Button -->
@@ -93,15 +93,57 @@
             <section class="second-section">
                 <div class="setup-menu">
                     <div class="setup-guide">
-                      <h5 class="setup-text">Setup guide</h5>
-                      <p class="setup-p">Use this personalized guide to get your store up and running.</p>
-                      <span class="setup-span">1 / 5 completed <hr class="setup-line"></span>
+                        <h5 class="setup-text">Setup guide</h5>
+                        <p class="setup-p">Use this personalized guide to get your store up and running.</p>
+                          <div class="setup-score">
+                            <span class="setup-span">1 / 5 completed 
+                            </span>
+                            <hr class="setup-line">
+                         </div>
                     </div>
-                    <img class="setup-img" src="https://crushingit.tech/hackathon-assets/icon-arrow-down.svg" alt="">
+                    <div class="setup-icon">
+                        <img onclick= hideSecondSection2()  class="setup-img" src="https://crushingit.tech/hackathon-assets/icon-arrow-down.svg" alt=""> 
+                    </div>
+                </div>
+            </section>
+            <!-- setup guide 2 -->
+            <section class="second-section2">
+                <div class="setup-menu">
+                    <div class="setup-guide">
+                        <div class="setup-guide-frame">
+                          <h5 class="setup-text">Setup guide</h5>
+                          <p class="setup-p">Use this personalized guide to get your store up and running.</p>
+                          <div class="setup-score">
+                              <span class="setup-span">1 / 5 completed 
+                              </span>
+                              <hr class="setup-line">
+                          </div>
+                           
+                              <div class="setup-icon2">
+                                <img onclick= showSecondSection() class="setup-img2" src="https://crushingit.tech/hackathon-assets/icon-arrow-up.svg" alt="">
+                              </div>
+                        </div>
+                         <!-- setup guide main -->
+                        <div class="setup-guide-main">
+                             <img class="setup-guide-main-icon" src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg" alt="">
+                            <div class="setup-guide-main-main">
+                                <div class="setup-guide-main-">
+                                   <h5  class="setup-guide-main-text">    Customize your online store</h5>
+                                </div>
+                                     <p class="setup-guide-main-p"> 
+                                       Choose a theme and add your logo, colors, and images to reflect your brand.
+                                       <a class="setup-guide-main-link" href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes">Learn more</a>
+                                    </p> 
+                                <div class="setup-guide-main-button">
+                                    <button class="setup-guide-main-button-text">Customize theme</button>
+                                </div>
+                            </div>
+                                <img class="setup-guide-main-img" src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="ig">
+                        </div>
+                    </div>
                 </div>
             </section>
     </div>
-
-  <script src="./app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
