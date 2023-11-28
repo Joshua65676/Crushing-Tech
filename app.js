@@ -9,6 +9,13 @@ function showLogoMenu() {
     // logoMenu.style.display = 'flex';
 }
 
+document.querySelector('.logo-text').onclick = function() {
+  document.querySelector('.logo-menu-mobile').style.display = 'flex';
+}
+document.querySelector('.tag').onclick = function() {
+  document.querySelector('.notificantion-menu-mobile').style.display = 'flex';
+}
+
 function showNotificantionMenu() {
     const notificantionMenu = document.querySelector('.notificantion-menu');
     if (notificantionMenu.matches('.notificantion-menu')) {
@@ -223,13 +230,6 @@ document.querySelector('.link5').onclick = function() {
   document.querySelector('.main4').style.display = 'none';
   document.querySelector('.main5').style.display = 'flex';
 }
-
-
-
-
-
-
-
 
 
 // const logoMenu = document.querySelector('.logo-menu');

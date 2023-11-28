@@ -207,6 +207,10 @@ text-decoration: none;
     background: white;
     border: 1px solid #DBDBDB
 }
+.notificantion-menu-mobile{
+    display: none;
+}
+
 .notificantion-text{
     display: flex;
     justify-content: space-between;
@@ -389,7 +393,8 @@ text-decoration: none;
     display: flex;
     position: relative;
     justify-content: right;
-     margin-top: -130px;
+    margin-top: -130px;
+    margin-right: 35px;  
 }
 .setup-img{
     width: Hug (32px);
@@ -551,14 +556,7 @@ text-decoration: none;
     left: 2px;
     border: 2.08px;
 }
-/* .setup-guide-heading-icon:hover,
-.setup-guide-heading-addDomain:hover,
-.setup-guide-heading-store:hover,
-.setup-guide-heading-provider:hover,
-.setup-guide-heading-addProduct:hover{
-        background: #005BD3;
 
-} */
 .setup-guide-heading-text {
     width: Fill (736px);
     height: Hug (22px);
@@ -665,15 +663,7 @@ text-decoration: none;
 .main2, .main3, .main4, .main5{
     display: none;
 }
-/* .main3{
 
-}
-.main4{
-
-}
-.main5{
-
-} */
 @media (max-width: 992px){
     .logo-mobile{
         display: flex;
@@ -700,12 +690,85 @@ text-decoration: none;
         gap: 6px; 
         margin-left: -9;
     }
+    .plan-text2{
+        width: 300px;
+        height: 50px;
+    }
+    .setup-p2{
+        width: 300px;
+        height: 30px;
+    }
     .section-mobile{ 
         padding-top: 50px;
         padding-bottom: 30px;
-
     }
     .section{
         display: none;
+    }
+    .second-sections{
+        border: 1px;
+        gap: 16px;
+        padding: 8px;
+        justify-content: space-between;
+        margin-left: -20px;
+        border-radius: none;
+        width: -500px;
+    }
+    .setup-guide-main-p{
+        width: 326px;
+        height: 50px;
+    }
+    .second-sections2{
+        border: 1px;
+        gap: 16px;
+        padding: 8px;
+        justify-content: space-between;
+        margin-left: -20px;
+        border-radius: none;
+        width: -500px;
+        /* width: 100px; */
+    }
+    .setup-icons2{
+        margin-left: 230px;
+        padding-top: -150px;
+        width: 450px;
+        position: relative;  
+    }
+    .logo-menu-mobile{
+        width: 250px;
+        padding: 40px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: auto;
+        margin-top: -10px;
+        top: 90px;
+        
+        width: Fixed (320px);
+        height: Hug (384px);
+        top: 116px;
+        left: 154px;
+        padding: 6px, 0px, 6px, 0px;
+        border-radius: 14px;
+        border: 1px;
+        gap: 4px;
+        background: white;
+    }
+    .notificantion-menu-mobile{
+        display: none;
+        width: Fixed (358px);
+        height: Hug (136px);
+        top: 116px;
+        left: 16px;
+        padding: 16px;
+        border-radius: 14px;
+        border: 1px;
+        gap: 16px;
+
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: center;
+        margin-left: auto;
     }
 }
