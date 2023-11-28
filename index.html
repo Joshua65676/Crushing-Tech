@@ -14,7 +14,8 @@
            <!-- NavBar -->
             <nav class="navbar">
             <!-- logo -->
-              <img src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg" alt="logo"/>
+            <img class="logo-mobile" src="https://crushingit.tech/hackathon-assets/shopify-icon.svg" alt="logo">
+              <img class="logo-desktop" src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg" alt="logo"/>
                <!-- Search Button -->
               <p class="search-bar">
                 <logo class="icon"> <img class="icon-img" src="https://crushingit.tech/hackathon-assets/icon-search.svg" alt=""/> </logo>
@@ -76,9 +77,9 @@
         <!-- Select a plan section -->
         <section class="section">
             <div class="select-plan">
-                <p class="plan-text">
-                   Extend your trial for $1/month for 3 months on select plans.
-                </p>
+                    <p class="plan-text">
+                       Extend your trial for $1/month for 3 months on select plans.
+                    </p>             
                 <div class="plan-frame">
                     <button class="plan-button">
                        select a plan
@@ -89,6 +90,25 @@
                 </div>
             </div>
         </section>
+        <!-- select a plan section for mobile -->
+        <section class="section-mobile">
+            <div class="select-plan2">
+                <div>
+                    <p class="plan-text">
+                       Extend your trial for $1/month for 3 months on select plans.
+                    </p>             
+                    <button class="plan-button">
+                        select a plan
+                    </button>
+                </div>
+                <div class="">
+                    <a>
+                     <img class="plan-img plan-img2" src="https://crushingit.tech/hackathon-assets/icon-cross.svg" alt="">
+                    </a>    
+                </div>
+            </div>
+        </section>
+
             <!-- setup guide -->
             <section class="second-section">
                 <div class="setup-menu">
@@ -123,23 +143,165 @@
                                 <img onclick= showSecondSection() class="setup-img2" src="https://crushingit.tech/hackathon-assets/icon-arrow-up.svg" alt="">
                               </div>
                         </div>
-                         <!-- setup guide main -->
-                        <div class="setup-guide-main">
-                             <img class="setup-guide-main-icon" src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg" alt="">
+
+
+                        <!-- setup guide main -->
+                        <a href="#" class="setup-guide-heading-link link">
+                        <div class="setup-guide-heading">
+                            <img onclick= showMarkIcon()  class="setup-guide-heading-icon" src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg" alt="">
+                            <img  class="setup-guide-heading-icon2" src="https://crushingit.tech/hackathon-assets/icon-spinner.svg" alt="">
+                            <img class="setup-guide-heading-icon3" src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="">
+                            <div>
+                                <h5  class="setup-guide-heading-text">Customize your online store</h5>
+                            </div>
+                        </div>
+                        </a>
+
+                        <div class="setup-guide-main main1">
+                            <img onclick= showMarkIcon() class="setup-guide-heading2-icon" src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg" alt="">
+                            <img  class="setup-guide-heading2-icon2" src="https://crushingit.tech/hackathon-assets/icon-spinner.svg" alt="">
+                            <img class="setup-guide-heading2-icon3" src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="">
                             <div class="setup-guide-main-main">
                                 <div class="setup-guide-main-">
-                                   <h5  class="setup-guide-main-text">    Customize your online store</h5>
+                                    <h5  class="setup-guide-main-text">Customize your online store</h5>
                                 </div>
-                                     <p class="setup-guide-main-p"> 
-                                       Choose a theme and add your logo, colors, and images to reflect your brand.
-                                       <a class="setup-guide-main-link" href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes">Learn more</a>
-                                    </p> 
+                            <p class="setup-guide-main-p"> 
+                                Choose a theme and add your logo, colors, and images to reflect your brand.
+                                <a class="setup-guide-main-link" href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes">Learn more</a>
+                            </p> 
+                            <div class="setup-guide-main-button">
+                                <button class="setup-guide-main-button-text">Customize theme</button>
+                            </div>
+                          </div>
+                          <img class="setup-guide-main-img" src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="ig">
+                        </div>
+
+                        <!-- setup guide main 2 -->
+                        <a href="#" class="setup-guide-heading-link link2">
+                        <div class="setup-guide-heading">
+                            <img onclick= showMarkIcon()  class="setup-guide-heading-addProduct" src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg" alt="">
+                            <img class="setup-guide-heading-addProduct2" src="https://crushingit.tech/hackathon-assets/icon-spinner.svg" alt="">
+                            <img class="setup-guide-heading-addProduct3" src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="">
+                            <div>
+                                <h5  class="setup-guide-heading-text">Add your first product</h5>
+                            </div>
+                        </div>
+                        </a>
+
+                        <div class="setup-guide-main main2">
+                            <img onclick= showMarkIcon() class="setup-guide-heading2-addProduct" src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg" alt="">
+                            <img class="setup-guide-heading2-addProduct2" src="https://crushingit.tech/hackathon-assets/icon-spinner.svg" alt="">
+                            <img class="setup-guide-heading2-addProduct3" src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="">
+                        <div class="setup-guide-main-main">
+                          <div class="setup-guide-main-">
+                                <h5  class="setup-guide-main-text">Add your first product</h5>
+                            </div>
+                            <p class="setup-guide-main-p"> 
+                                Write a description, add photos, and set pricing for the products you plan to sell.
+                                <a class="setup-guide-main-link" href="https://help.shopify.com/en/manual/products/add-update-products">Learn more</a>
+                            </p> 
+                            <div class="setup-guide-main-button">
+                                <button class="setup-guide-main-button-text">Add product</button>  <button class="setup-guide-main-button-text">Import product</button>
+                            </div>
+                        </div>
+                        <img class="setup-guide-main-img" src="https://crushingit.tech/hackathon-assets/product.png" alt="ig">
+                    </div>
+                    
+
+                    <!-- setup guide main 3 -->
+                    <a href="#" class="setup-guide-heading-link link3">
+                    <div class="setup-guide-heading">
+                        <img onclick= showMarkIcon()  class="setup-guide-heading-addDomain" src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg" alt="">
+                        <img class="setup-guide-heading-addDomain2" src="https://crushingit.tech/hackathon-assets/icon-spinner.svg" alt="">
+                        <img class="setup-guide-heading-addDomain3" src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="">
+                        <div>
+                            <h5  class="setup-guide-heading-text">Add a custom domain</h5>
+                        </div>
+                    </div>
+                    </a>
+
+                        <div class="setup-guide-main main3">
+                            <img class="setup-guide-heading2-addDomain" src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg" alt="">
+                            <img class="setup-guide-heading2-addDomain2" src="https://crushingit.tech/hackathon-assets/icon-spinner.svg" alt="">
+                            <img class="setup-guide-heading2-addDomain3" src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="">
+                            <div class="setup-guide-main-main">
+                                <div class="setup-guide-main-">
+                                    <h5  class="setup-guide-main-text">Add a custom domain</h5>
+                                </div>
+                                <p class="setup-guide-main-p"> 
+                                    Your current domain is 222219.myshopify.com but you can add a custom domain to help customers find your online store. 
+                                    <a class="setup-guide-main-link" href="https://help.shopify.com/en/manual/domains">Learn more</a>
+                                </p> 
                                 <div class="setup-guide-main-button">
-                                    <button class="setup-guide-main-button-text">Customize theme</button>
+                                    <button class="setup-guide-main-button-text">Add domain</button>
                                 </div>
                             </div>
-                                <img class="setup-guide-main-img" src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="ig">
+                            <img class="setup-guide-main-img" src="https://crushingit.tech/hackathon-assets/website.png" alt="ig">
                         </div>
+                        
+
+                        <!-- setup guide main 4 -->
+                        <a href="#" class="setup-guide-heading-link link4">
+                        <div class="setup-guide-heading">
+                            <img onclick= showMarkIcon()  class="setup-guide-heading-store" src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg" alt="">
+                            <img class="setup-guide-heading-store2" src="https://crushingit.tech/hackathon-assets/icon-spinner.svg" alt="">
+                            <img class="setup-guide-heading-store3" src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="">
+                            <div>
+                                <h5  class="setup-guide-heading-text">Name your store</h5>
+                            </div>
+                        </div>
+                        </a>
+
+                        <div class="setup-guide-main main4">
+                            <img class="setup-guide-heading2-store" src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg" alt="">
+                            <img class="setup-guide-heading2-store2" src="https://crushingit.tech/hackathon-assets/icon-spinner.svg" alt="">
+                            <img class="setup-guide-heading2-store3" src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="">
+                            <div class="setup-guide-main-main">
+                                <div class="setup-guide-main-">
+                                    <h5  class="setup-guide-main-text">Name your store</h5>
+                                </div>
+                                <p class="setup-guide-main-p"> 
+                                    Your temporary store name is currently Davii collections. The store name appears in your admin and your online store.
+                                    <a class="setup-guide-main-link" href="https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-business-settings#set-or-change-your-online-store-name-and-legal-business-name">Learn more</a>
+                                </p> 
+                                <div class="setup-guide-main-button">
+                                    <button class="setup-guide-main-button-text">Name store</button>
+                                </div>
+                            </div>
+                            <img class="setup-guide-main-img" src="https://crushingit.tech/hackathon-assets/name-store.png" alt="ig">
+                        </div>
+                        
+                        <!-- setup guide main 5 -->
+                        <a href="#" class="setup-guide-heading-link link5">
+                        <div class="setup-guide-heading">
+                            <img onclick= showMarkIcon()  class="setup-guide-heading-provider" src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg" alt="">
+                            <img class="setup-guide-heading-provider2" src="https://crushingit.tech/hackathon-assets/icon-spinner.svg" alt="">
+                            <img class="setup-guide-heading-provider3" src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="">
+                            <div>
+                                <h5  class="setup-guide-heading-text">Set up a payment provider</h5>
+                            </div>
+                        </div>
+                        </a>
+
+                        <div class="setup-guide-main main5">
+                            <img onclick= showMarkIcon() class="setup-guide-heading2-provider" src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg" alt="">
+                            <img class="setup-guide-heading2-provider2" src="https://crushingit.tech/hackathon-assets/icon-spinner.svg" alt="">
+                            <img class="setup-guide-heading2-provider3" src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="">
+                            <div class="setup-guide-main-main">
+                                <div class="setup-guide-main-">
+                                    <h5  class="setup-guide-main-text">Set up a payment provider</h5>
+                                </div>
+                                <p class="setup-guide-main-p"> 
+                                    Choose a payment provider to start accepting payments. You’ll need to create an account with the payment provider and set it up with your Shopify store.
+                                    <a class="setup-guide-main-link" href="https://help.shopify.com/en/manual/payments">Learn more</a>
+                                </p> 
+                                <div class="setup-guide-main-button">
+                                    <button class="setup-guide-main-button-text">Set up payment</button>
+                                </div>
+                            </div>
+                            <img class="setup-guide-main-img" src="https://crushingit.tech/hackathon-assets/payment.png" alt="ig">
+                        </div>
+                        
                     </div>
                 </div>
             </section>
